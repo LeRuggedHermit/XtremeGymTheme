@@ -1,0 +1,327 @@
+/*CDN-fonts: */
+@import url("https://fonts.cdnfonts.com/css/montserrat-alternates");
+/*
+font-family: 'Montserrat Alternates', sans-serif;
+*/
+@import url("https://fonts.cdnfonts.com/css/metal-mania-2");
+/*
+font-family: 'Metal Mania', sans-serif;
+*/
+
+/*inställningar för body*/
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+/*--------------------------Sidhuvud: -----------------------------*/
+
+header {
+  width: 100%;
+  height: 5.8rem;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+/*-----------------------Vanlig meny-------------------*/
+
+/*Logotyp: */
+#logo {
+  height: 5.5rem;
+  margin-left: 4vmin;
+}
+
+/*Navigering: */
+nav {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/*Navigeringsmeny: */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 4vmin;
+  font-weight: 300;
+}
+
+/*Navigerings-länkar:*/
+.nav-menu li {
+  position: relative;
+  color: #f0f0f0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-menu a:hover {
+  color: #4a9dff;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #dbcb13;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/*----------------- Knappar: -------------*/
+
+/*Knapparnas behållare: */
+.buttons {
+  height: 5.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 8vmin;
+  margin-right: 4vmin;
+}
+
+/*Menyknapp: */
+.menu_btn {
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #136835;
+  border: #44ff8c solid 2px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.8s ease-in, background-color 0.4s ease-in, border 0.4s ease-in;
+}
+
+/*Knapp för att stänga menyn: */
+.close_btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fab1b1;
+  border: #db6565 solid 2px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.8s ease-in, background-color 0.4s ease-in, border 0.4s ease-in;
+  margin-bottom: 2rem;
+}
+
+/*Knapp för att boka prov-träning: */
+.trial_btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffcc4a;
+  border: #ffcc4a solid 2px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.8s ease-in, background-color 0.4s ease-in, border 0.4s ease-in;
+}
+
+.trial_btn:hover {
+  background-color: #ffcc4a;
+  border: solid rgb(0, 117, 113) 2px;
+  color: black;
+}
+
+/*Knapp för att bli medlem: */
+.member_btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: #4a9dff;
+  border: #4a9dff solid 2px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.8s ease-in, background-color 0.4s ease-in, border 0.4s ease-in;
+}
+
+.member_btn:hover {
+  background-color: #4a9dff;
+  border: #ffcc4a solid 2px;
+  color: black;
+}
+
+/*--------------------------Mobil-meny: ---------------*/
+
+.mobile-nav-container {
+  display: none;
+  background-color: black;
+  transform: translateY(-500%);
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.mobile-nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 6vmin;
+  font-weight: 300;
+}
+
+.mobile-nav-menu li {
+  position: relative;
+  color: #f0f0f0;
+}
+
+.mobile-nav-menu a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 2.2rem;
+  padding: 5px 0;
+  display: inline-block;
+  position: relative;
+}
+
+main {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.about-content-container {
+  font-family: "Montserrat Alternates", sans-serif;
+  width: 80%;
+}
+
+.about-gallery {
+  margin-top: 10rem;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
+}
+
+#image-track {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 4vmin;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.about-gallery {
+  text-align: center;
+}
+
+.about-gallery h1 {
+  font-size: 4.5rem;
+}
+
+.about-content {
+  margin-bottom: 15rem;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/*..................Media queries: .............*/
+
+/*För små skärmar: */
+@media only screen and (max-width: 640px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+  }
+
+  .mobile-nav-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+  }
+
+  .nav-menu {
+    display: none;
+    visibility: hidden;
+  }
+
+  .menu_btn {
+    display: block;
+  }
+
+  .menu_btn,
+  .member_btn,
+  .trial_btn,
+  .close_btn,
+  .push-btn {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+/*För halv-små skärmar: */
+@media only screen and (min-width: 641px) and (max-width: 840px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+  }
+
+  .mobile-nav-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+  }
+
+  .nav-menu {
+    display: none;
+    visibility: hidden;
+  }
+
+  .menu_btn {
+    display: block;
+  }
+
+  .menu_btn,
+  .member_btn,
+  .trial_btn,
+  .close_btn,
+  .push-btn {
+    width: 100px;
+    height: 40px;
+  }
+}
